@@ -183,18 +183,18 @@ footer a {
   /********************
     Profile Styles
   ********************/
+  #home {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
   .profile-image {
-    float: right;
-    width: 35%;
-    margin-right: 50px;
-    margin-top: 0;
+    width: 40%;
+    margin-right: 30px;
   }
 
   #home p {
-    float: left;
-    width: 50%;
-    margin-top: 3%;
-    margin-left: 30px;
     text-align: left;
     font-size: 1.5em;
   }
@@ -203,14 +203,17 @@ footer a {
   /********************
     Portfolio Styles
   ********************/
+  .portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .portfolio-card {
     display: block;
     width: 50%;
-    float: left;
   }
 
   .portfolio-card img{
-    max-width: 97%;
+    max-width: 94%;
   }
   .portfolio-card p {
     font-size: 1.3em;
@@ -281,21 +284,73 @@ footer a {
     margin: auto;
   }
 
+  .section {
+    background: rgb(244, 244, 244);
+    box-shadow: 1px 1px 1px rgb(200, 200, 200);
+    border-radius: 5px;
+  }
+
   /********************
     Header Styles
   ********************/
-  header h2 {
-    float: left;
-    padding-left: 5%;
-    max-width: 40%;
-    font-size: 2.2em;
-
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   header ul {
-    float: right;
-    width: 60%;
-    margin-top: .93em;
+    font-size: .83em;
+  }
+
+  header nav {
+    flex-grow: 1;
+    padding-top: 1.94em;
+    align-self: center;
+  }
+
+  header h2 {
+    flex-grow: 1;
+    align-self: center;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  /********************
+    Home Styles
+  ********************/
+
+  .profile-image {
+    width: 30%;
+    box-shadow: 1px 3px 5px rgb(200,200,200);
+    transition: all .5s;
+  }
+
+  .profile-image:hover {
+    transform: scale(1.05) rotate(10deg);
+  }
+
+  /********************
+    Portfolio Styles
+  ********************/
+
+  .portfolio-card {
+    width: 33%;
+    padding-top: 20px;
+    transition: all .5s;
+  }
+
+  .portfolio-card:hover {
+    box-shadow: 1px 1px 20px tomato;
+  }
+
+
+  /********************
+    Footer Styles
+  ********************/
+  .bottom-nav ul{
+    display: flex;
+    justify-content: flex-end;
   }
 
 }
