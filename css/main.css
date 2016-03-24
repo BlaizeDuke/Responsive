@@ -35,6 +35,7 @@ p {
 h3 {
   font-size: 2.9em;
   color: tomato;
+  text-transform: uppercase;
 }
 
 /********************
@@ -75,7 +76,7 @@ header a {
   Portfolio Styles
 ********************/
 .portfolio-card img{
-  max-width: 80%;
+  max-width: 90%;
 }
 
 .portfolio-card p {
@@ -83,7 +84,7 @@ header a {
 }
 
 .portfolio-card h4 {
-  margin: 20px 0;
+  margin: 35px 0;
   font-size: 1.9em;
 }
 
@@ -92,13 +93,27 @@ header a {
 /********************
   Contact Styles
 ********************/
+.contact-type {
+  margin-bottom: 35px;
+}
 
+.contact-info a {
+  margin-left: 30px;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+}
 
 /********************
   Footer Styles
 ********************/
 footer {
-  padding: 40px 0;
+  border-top: 2px solid #ABABAB;
+}
+
+footer h2, footer a {
+  padding: 40px 20px;
 }
 
 footer h2 {
