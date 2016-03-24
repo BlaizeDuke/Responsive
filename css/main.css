@@ -1,0 +1,115 @@
+/********************
+  Global Styles
+********************/
+* {
+  text-align: center;
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+body {
+  background: #efefef;
+  color: #565656;
+}
+
+a {
+  color: #232323;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all .5s;
+}
+
+a:hover {
+  color: tomato;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 10px 20px;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 2.9em;
+  color: tomato;
+}
+
+/********************
+  Header Styles
+********************/
+header h2 {
+  font-size: 3.8em;
+  color: tomato;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header li {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 20px 0;
+  margin: 10px 0;
+}
+
+header a {
+  display: block;
+  width: 100%;
+}
+
+
+/********************
+  Profile Styles
+********************/
+.profile-image {
+  width: 80%;
+}
+
+
+
+/********************
+  Portfolio Styles
+********************/
+.portfolio-card img{
+  max-width: 80%;
+}
+
+.portfolio-card p {
+  margin-bottom: 30px;
+}
+
+.portfolio-card h4 {
+  margin: 20px 0;
+  font-size: 1.9em;
+}
+
+
+
+/********************
+  Contact Styles
+********************/
+
+
+/********************
+  Footer Styles
+********************/
+footer {
+  padding: 40px 0;
+}
+
+footer h2 {
+  display: block;
+  float: left;
+  font-size: 3.1em;
+  margin: 0 10px;
+}
+
+footer a {
+  float: right;
+  font-size: 3.1em;
+  margin: 0 10px;
+}
