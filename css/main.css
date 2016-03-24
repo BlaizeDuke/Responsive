@@ -117,21 +117,18 @@ header a {
 ********************/
 footer {
   border-top: 2px solid #ABABAB;
-}
-
-footer h2, footer a {
-  padding: 30px 20px;
-  font-size: 1.2em;
-  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .89em;
 }
 
 footer h2 {
-  display: block;
-  float: left;
+  padding-left: 10px;
 }
 
-footer a {
-  float: right;
+.footer-to-top {
+  padding-right: 10px;
 }
 
 .bottom-nav {
@@ -261,12 +258,15 @@ footer a {
   .bottom-nav ul {
     display: flex;
     width: 100%;
+    justify-content: flex-end;
+    padding-right: 10px;
   }
 
   .bottom-nav li {
     padding-top: 8px;
     list-style-type: none;
     font-size: .7em;
+    padding-left: 20px;
   }
 }
 
