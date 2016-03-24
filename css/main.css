@@ -95,7 +95,37 @@ header a {
   font-size: 1.7em;
 }
 
+/********************
+  Skills Styles
+********************/
+.skills-wrapper ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
 
+.skills-wrapper li {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding-top: 5px;
+  color: rgb(20,20,20);
+  border: 1px solid rgba(20,20,20,.5);
+  box-shadow: 1px 1px 1px rgb(200,200,200);
+}
+
+.skills-3 {
+  background: lightgreen;
+}
+
+.skills-2 {
+  background: khaki;
+}
+
+.skills-1 {
+  background: tomato;
+}
 
 /********************
   Contact Styles
@@ -223,6 +253,29 @@ footer h2 {
     margin: 10px 0;
   }
 
+  /********************
+    Skills Styles
+  ********************/
+  .skills-wrapper {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .skills-description {
+    flex-grow: 2;
+  }
+
+  .skills-description p {
+    text-align: left;
+  }
+
+  .skills-wrapper ul {
+    flex-grow: 1;
+  }
+
 
   /********************
     Contact Styles
@@ -344,6 +397,17 @@ footer h2 {
     box-shadow: 1px 1px 20px tomato;
   }
 
+  /********************
+    Skills Styles
+  ********************/
+  .skills-wrapper li {
+    transition: all .5s;
+  }
+
+  .skills-wrapper li:hover {
+    transform: scale(1.05);
+    cursor: default;
+  }
 
   /********************
     Footer Styles
