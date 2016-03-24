@@ -4,6 +4,7 @@
 * {
   text-align: center;
   font-family: 'Sorts Mill Goudy', serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -36,6 +37,10 @@ h3 {
   font-size: 2.0em;
   color: tomato;
   text-transform: uppercase;
+}
+
+.section {
+  clear: both;
 }
 
 /********************
@@ -129,13 +134,168 @@ footer a {
   float: right;
 }
 
+.bottom-nav {
+  display: none;
+}
+
 
 /********************
   Tablet Media Queries Styles
 ********************/
 
 @media (min-width: 760px) {
-  body {
-    background: black;
+  /********************
+    Global Styles
+  ********************/
+  h3 {
+    margin: 40px 0;
+    padding-top: 30px;
   }
+
+  .hide-small {
+    display: block;
+  }
+
+  .hide-medium {
+    display: none;
+  }
+
+  /********************
+    Header Styles
+  ********************/
+  header h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  header ul {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  header li {
+    background: initial;
+    font-size: 1.5em;
+    padding-top: 10px;
+  }
+
+
+  /********************
+    Profile Styles
+  ********************/
+  .profile-image {
+    float: right;
+    width: 35%;
+    margin-right: 50px;
+    margin-top: 0;
+  }
+
+  #home p {
+    float: left;
+    width: 50%;
+    margin-top: 3%;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+
+  /********************
+    Portfolio Styles
+  ********************/
+  .portfolio-card {
+    display: block;
+    width: 50%;
+    float: left;
+  }
+
+  .portfolio-card img{
+    max-width: 97%;
+  }
+  .portfolio-card p {
+    font-size: 1.3em;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .portfolio-card h4 {
+    margin: 10px 0;
+  }
+
+
+  /********************
+    Contact Styles
+  ********************/
+  .contact-type {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 1.3em;
+  }
+
+  .contact-info {
+    margin-bottom: 15px;
+  }
+
+  /********************
+    Footer Styles
+  ********************/
+
+  footer {
+    margin-top: 30px;
+  }
+
+  footer h2, footer a {
+    font-size: 1.7em;
+  }
+
+  .bottom-nav {
+    width: 50%;
+    float: right;
+  }
+
+  .bottom-nav ul {
+    display: flex;
+    width: 100%;
+  }
+
+  .bottom-nav li {
+    padding-top: 8px;
+    list-style-type: none;
+    font-size: .7em;
+  }
+}
+
+/********************
+  Desktop Media Queries Styles
+********************/
+
+@media (min-width: 1000px) {
+  /********************
+    Layout Styles
+  ********************/
+  .wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+  }
+
+  /********************
+    Header Styles
+  ********************/
+  header h2 {
+    float: left;
+    padding-left: 5%;
+    max-width: 40%;
+    font-size: 2.2em;
+
+  }
+
+  header ul {
+    float: right;
+    width: 60%;
+    margin-top: .93em;
+  }
+
 }

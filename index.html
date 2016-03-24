@@ -12,21 +12,23 @@
 
     <header id="top">
       <h2>Blaize Pennington</h2>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <div class="content">
 
-      <div id="home">
+      <div class="section" id="home">
         <img src="img/profilePicture.jpg" alt="My Profile Picture" class="profile-image"/>
         <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
       </div>
 
-      <div id="portfolio">
+      <div class="section" id="portfolio">
         <h3>Portfolio</h3>
 
         <div class="portfolio-card">
@@ -66,7 +68,7 @@
         </div>
       </div>
 
-      <div id="contact">
+      <div class="section" id="contact">
         <h3>Contact</h3>
         <p class="contact-type">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
         <p class="contact-info">Phone <a href="tel:111-555-1234">+1 (111) 555-1234</a></p>
@@ -75,7 +77,14 @@
     </div>
     <footer>
       <h2>Blaize Pennington</h2>
-      <a href="#top">Back To Top</a>
+      <div class="bottom-nav hide-small">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <a href="#top" class="hide-medium">Back To Top</a>
     </footer>
   </div>
 </body>
